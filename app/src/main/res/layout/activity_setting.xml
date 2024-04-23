@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/back"
+            android:id="@+id/back"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="660dp"
+            android:textColor="#ffffff"
+            android:text="系统设置"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="系统启停"/>
+
+
+                <Button
+                    android:id="@+id/qidong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="915dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/tingzhi"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="停止"
+                    android:layout_marginLeft="100dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="系统复位"/>
+
+
+                <Button
+                    android:id="@+id/fuwei"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="复位"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="热水温度"/>
+
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:numeric="integer"
+                    android:id="@+id/hotwater"
+                    android:layout_marginLeft="585dp"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"/>
+
+
+
+                <Button
+                    android:id="@+id/hotqidong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="180dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/hottingzhi"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="停止"
+                    android:layout_marginLeft="100dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="冷水温度"/>
+
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/coldwater"
+                    android:layout_marginLeft="585dp"
+                    android:numeric="integer"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:layout_centerInParent="true"/>
+
+
+                <Button
+                    android:id="@+id/coldqidong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="180dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/coldtingzhi"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="停止"
+                    android:layout_marginLeft="100dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="气泡水温度"/>
+
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/qipaowater"
+                    android:layout_marginLeft="542dp"
+                    android:numeric="integer"
+                    android:layout_gravity="center"
+                    android:background="#E5E5E5"
+                    android:layout_centerInParent="true"/>
+
+
+
+                <Button
+                    android:id="@+id/qipaoqidong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="180dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/qipaotingzhi"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="停止"
+                    android:layout_marginLeft="100dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="设置规格"/>
+
+
+                <EditText
+                    android:id="@+id/big"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="855dp"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:text="ml"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/bigsure"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="确定"
+                    android:layout_marginLeft="115dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="消毒杀菌"/>
+
+
+                <Button
+                    android:id="@+id/xiaodu"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="915dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/tingzhixiaodu"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="停止"
+                    android:layout_marginLeft="100dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="自动模式"/>
+
+
+                <Button
+                    android:id="@+id/zidong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="开启"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动模式"/>
+
+
+                <Button
+                    android:id="@+id/shoudong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="关闭"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="清洗模式"/>
+
+
+                <Button
+                    android:id="@+id/qingxi"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="关闭"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="标定模式"/>
+
+
+                <Button
+                    android:id="@+id/biaoding"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="关闭"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动冷水"/>
+
+
+                <Button
+                    android:id="@+id/lengshui1"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="冷水1"
+                    android:layout_marginLeft="75dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/lengshui2"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="冷水2"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/lengshui3"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="冷水3"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/lengshui4"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="冷水4"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/lengshui5"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="冷水5"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/lengshui6"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="冷水6"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动热水"/>
+
+
+                <Button
+                    android:id="@+id/reshui1"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="热水1"
+                    android:layout_marginLeft="75dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/reshui2"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="热水2"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/reshui3"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="热水3"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/reshui4"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="热水4"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/reshui5"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="热水5"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/reshui6"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="热水6"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动气泡水"/>
+
+
+                <Button
+                    android:id="@+id/qipao1"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="气泡水1"
+                    android:layout_marginLeft="28dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/qipao2"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="气泡水2"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/qipao3"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="气泡水3"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/qipao4"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="气泡水4"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/qipao5"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="气泡水5"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/qipao6"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="气泡水6"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动果汁"/>
+
+
+                <Button
+                    android:id="@+id/guozhi1"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="果汁1"
+                    android:layout_marginLeft="75dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/guozhi2"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="果汁2"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/guozhi3"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="果汁3"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/guozhi4"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="果汁4"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/guozhi5"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="果汁5"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/guozhi6"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="果汁6"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动测试水箱"/>
+
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="90dp"
+                    android:textSize="40sp"
+                    android:id="@+id/bsbsx1"
+                    android:text="补水泵水箱1"
+                    android:layout_marginLeft="725dp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:textSize="40sp"
+                    android:id="@+id/bsbsx1stop"
+                    android:text="停止"
+                    android:layout_marginLeft="100dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="落杯手动模式"/>
+
+
+                <Button
+                    android:id="@+id/luobeishoudong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="关闭"
+                    android:layout_marginLeft="1087dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="落杯自动模式"/>
+
+
+                <Button
+                    android:id="@+id/luobeizidong"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="开启"
+                    android:layout_marginLeft="1087dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动落杯"/>
+
+
+                <Button
+                    android:id="@+id/luobei"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动落杯旋转"/>
+
+
+                <Button
+                    android:id="@+id/luobeixuanzhuan"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1087dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="手动落杯盖"/>
+
+
+                <Button
+                    android:id="@+id/luobeigai"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1130dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="压盖上升"/>
+
+
+                <Button
+                    android:id="@+id/yagaiup"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="压盖下降"/>
+
+
+                <Button
+                    android:id="@+id/yagaidown"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1175dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="移动到落杯位置"/>
+
+
+                <Button
+                    android:id="@+id/yidongluobei"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1042dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="移动到接果汁位置"/>
+
+
+                <Button
+                    android:id="@+id/yidongguozhi"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1000dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="移动到落杯盖位置"/>
+
+
+                <Button
+                    android:id="@+id/yidongbeigai"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1000dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="移动到压盖位置"/>
+
+
+                <Button
+                    android:id="@+id/yidongyagai"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1042dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_margin="60dp"
+                    android:textColor="#ffffff"
+                    android:text="开门"/>
+
+
+                <Button
+                    android:id="@+id/kaimen"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动"
+                    android:layout_marginLeft="1270dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+

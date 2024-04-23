@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.licheedev.serialtool"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+//        versionName "1.0"
+        versionName "${releaseTime()}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "my_${releaseTime()}.apk"
+                }
+            }
+        }
+    }
+    sourceSets{
+
+        main {
+
+            //jni库的调用会到资源文件夹下libs里面找so文件
+
+            jniLibs.srcDirs = ['libs']
+
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.4.+'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.github.Acccord:AndroidSerialPort:1.5.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation "com.android.support:appcompat-v7:27.${supportVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.3'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+//    implementation 'com.github.licheedev.SomeLibrary:myutils:0.02'
+    implementation 'com.licheedev:logplus:1.0.0'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+    //rx
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    // 选文件的
+    implementation 'ru.bartwell:exfilepicker:2.1'
+
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+//    // 阿里云实人认证服务SDK AAR
+//    implementation files('/libs/aliyun-face-2.3.4-20230904100300.aar')
+//    implementation files('libs/aliyun-ocr-2.3.4-20230904100300.aar')
+//    implementation files('libs/aliyun-photinus-2.3.4-20230904100300.aar')
+//    implementation files('libs/aliyun-wishverify-2.3.4-20230904100300.aar') //compileSdkVersion必须在29及以上才可使用
+//    implementation files('libs/aliyun-facelanguage-2.3.4-20230904100300.aar')
+//    implementation files('libs/Android-AliyunFaceGuard-10042.aar')
+//    implementation files('libs/APSecuritySDK-DeepSec-7.0.1.20220813.jiagu.aar')
+
+    // 阿里云实人认证服务三方依赖库，不能省略
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okio:okio:1.14.0'
+    implementation 'com.alibaba:fastjson:1.2.83_noneautotype'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss", TimeZone.getTimeZone("UTC"))
+}

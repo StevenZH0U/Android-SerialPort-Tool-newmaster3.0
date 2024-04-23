@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activity.WindowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/back"
+            android:id="@+id/back"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:paddingLeft="270dp"
+            android:layout_margin="40dp"
+            android:textColor="#ffffff"
+            android:text="系统状态"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="系统状态"/>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="未启动"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="515dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="握手查询"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="000"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="515dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="当前冷水温度"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="当前热水温度"/>
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷饮制冷"/>
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="515dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热饮加热"/>
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="未启动"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="515dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="饮用水温"/>
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="未启动"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="515dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="填充/清洗"/>
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="运行中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="498dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷水键"/>
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="启动中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="560dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热水键"/>
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="未启动"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="560dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="饮用水待机"/>
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="待机中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="470dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热水缺水故障"/>
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷水缺水故障"/>
+
+                <TextView
+                    android:id="@+id/tv13"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷饮制冷故障"/>
+
+                <TextView
+                    android:id="@+id/tv14"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热饮加热故障"/>
+
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="饮用水加热故障"/>
+
+                <TextView
+                    android:id="@+id/tv16"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="380dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷饮水温OK"/>
+
+                <TextView
+                    android:id="@+id/tv17"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="就绪"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="458dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热饮水温OK"/>
+
+                <TextView
+                    android:id="@+id/tv18"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="就绪"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="458dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="饮用水温OK"/>
+
+                <TextView
+                    android:id="@+id/tv19"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="就绪"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="458dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷水口清洗"/>
+
+                <TextView
+                    android:id="@+id/tv20"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="无"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="470dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="A口浆料填充"/>
+
+                <TextView
+                    android:id="@+id/tv21"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="填充中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热水口清洗"/>
+
+                <TextView
+                    android:id="@+id/tv22"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="清洗中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="470dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="B口浆料填充"/>
+
+                <TextView
+                    android:id="@+id/tv23"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="无"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="C口浆料填充"/>
+
+                <TextView
+                    android:id="@+id/tv25"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="填充中"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="A口果汁缺料"/>
+
+                <TextView
+                    android:id="@+id/tv26"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="B口果汁缺料"/>
+
+                <TextView
+                    android:id="@+id/tv27"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="C口果汁缺料"/>
+
+                <TextView
+                    android:id="@+id/tv28"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="正常"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="ID编码1"/>
+
+                <TextView
+                    android:id="@+id/tv29"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="111"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="540dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="ID编码2"/>
+
+                <TextView
+                    android:id="@+id/tv30"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="222"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="540dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="ID编码3"/>
+
+                <TextView
+                    android:id="@+id/tv31"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="333"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="540dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="ID编码4"/>
+
+                <TextView
+                    android:id="@+id/tv32"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="444"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="540dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="冷水出水速度"/>
+
+                <TextView
+                    android:id="@+id/tv33"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="热水出水速度"/>
+
+                <TextView
+                    android:id="@+id/tv34"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="425dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="A口浆料速度"/>
+
+                <TextView
+                    android:id="@+id/tv35"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="B口浆料速度"/>
+
+                <TextView
+                    android:id="@+id/tv36"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="C口浆料速度"/>
+
+                <TextView
+                    android:id="@+id/tv37"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="442dp"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

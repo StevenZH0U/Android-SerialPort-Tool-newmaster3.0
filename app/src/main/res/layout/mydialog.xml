@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fl"
+        android:layout_width="650dp"
+        android:layout_height="560dp"
+        android:background="@mipmap/mydialogbg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/xiaobei" />
+
+            <ImageButton
+                android:id="@+id/center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/zhongbei" />
+
+
+
+            <ImageButton
+                android:id="@+id/big"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/dabei" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/code2"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/hot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/hot2"/>
+
+            <Button
+                android:id="@+id/qipao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/qipao2"/>
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择支付方式:"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/vxpay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@mipmap/weixin"
+            android:drawablePadding="13dp"
+            android:layoutDirection="rtl"
+            android:text="微信支付"
+            android:textColor="#333333"
+            android:textDirection="ltr"
+            android:textSize="26sp"/>
+
+        <RadioButton
+            android:id="@+id/alipay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@mipmap/zhifubao"
+            android:drawablePadding="13dp"
+            android:layoutDirection="rtl"
+            android:text="支付宝支付"
+            android:textColor="#333333"
+            android:textDirection="ltr"
+            android:textSize="26sp"/>
+
+        <RadioButton
+            android:id="@+id/yinlianpay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@mipmap/yinlian"
+            android:drawablePadding="13dp"
+            android:layoutDirection="rtl"
+            android:text="银联支付"
+            android:textColor="#333333"
+            android:textDirection="ltr"
+            android:textSize="26sp"/>
+
+
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/sure"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/dialogsure" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/dialogback" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
